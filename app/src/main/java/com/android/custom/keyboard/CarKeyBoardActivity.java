@@ -41,5 +41,6 @@ public class CarKeyBoardActivity extends AppCompatActivity {
                 return false;
             }
         });
+        act_key_board_et.performClick();
     }
 }

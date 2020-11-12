@@ -28,5 +28,6 @@ public class SafeActivity extends AppCompatActivity {
                 keyBoardDialogUtils.show(et);
             }
         });
+        et.performClick();
     }
 }
