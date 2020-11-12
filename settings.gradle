@@ -1,0 +1,2 @@
+include ':app', ':androidkeyboard'
+rootProject.name='CustomKeyBoard'

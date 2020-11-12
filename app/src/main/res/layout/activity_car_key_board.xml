@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/act_key_board_et"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:inputType="text"
+        tools:ignore="Autofill,LabelFor" />
+
+    <LinearLayout
+        android:id="@+id/ky_keyboard_parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#d1d5dd"
+        android:orientation="vertical"
+        android:paddingBottom="15dp"
+        android:paddingTop="10dp"
+        tools:ignore="RtlHardcoded">
+
+        <!--自定义，随便改-->
+        <com.android.custom.androidkeyboard.view.CarKeyboardView
+            android:id="@+id/ky_keyboard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#d1d5dd"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:keyBackground="@drawable/keyboard_click_bg"
+            android:keyTextColor="@color/edt_text_color"
+            android:keyTextSize="20sp"
+            android:shadowColor="#d1d5dd"
+            android:shadowRadius="0.1" />
+
+    </LinearLayout>
+
+</RelativeLayout>
